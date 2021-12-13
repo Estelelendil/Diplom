@@ -511,6 +511,11 @@ aside h2 {
   border: none;
 }
 
+.label-search {
+  width: 100%;
+  flex-grow: 1;
+}
+
 .input-email {
   height: 50px;
   width: 100%;
