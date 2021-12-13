@@ -143,7 +143,7 @@
 }
 
 .welcome {
-  background-image: url("/images/banner-bg.jpg");
+  background-image: url("../images/banner-bg.jpg");
   background-repeat: no-repeat;
   background-position: center center;
   background-size: cover;
@@ -649,23 +649,23 @@ aside h2:after {
 }
 
 .social-link-twitter {
-  background-image: url("../css/svg/004-twitter.svg");
+  background-image: url("../svg/004-twitter.svg");
 }
 
 .social-link-pinterest {
-  background-image: url("../css/svg/001-pinterest.svg");
+  background-image: url("../svg/001-pinterest.svg");
 }
 
 .social-link-facebook {
-  background-image: url("../css/svg/002-facebook-logo.svg");
+  background-image: url("../svg/002-facebook-logo.svg");
 }
 
 .social-link-Instagramm {
-  background-image: url("../css/svg/005-instagram.svg");
+  background-image: url("../svg/005-instagram.svg");
 }
 
 .social-link-tumblr {
-  background-image: url("../css/svg/003-tumblr.svg");
+  background-image: url("../svg/003-tumblr.svg");
 }
 
 .social-link-text {
