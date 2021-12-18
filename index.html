@@ -10,28 +10,37 @@
    <script src="js/index.js" defer></script>
  </head>
  <body>
-  <div class="popup shown" id="popup"> 
+  <div class="popup shown" id="popup">
     <div class="popup-white">
       <button class="close " id="popup-close">
         <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 441 441">
           <path fill="#fff" stroke="#000" d="M220.336 170.564l.353.353.354-.353L390.288 1.318l49.796 49.773-169.269 169.245-.353.354.353.354 169.269 169.245-49.796 49.796-169.245-169.269-.354-.353-.353.353-169.27 169.269-49.748-49.796 169.245-169.245.353-.354-.353-.354L1.318 51.067 51.09 1.318l169.246 169.246z" />
         </svg>
+        <span class="visually-hidden">Кнопка, закрывающая окно обратной связи</span>
       </button>
       <h2 class="popup-title h2">Ваш фидбэк</h2>
       <form class="form" action="">
         <label class="question1">
+          <div class="select-wrapper">
           <span class="text">Как часто Вы заходите на сайт</span>
-          <input class="input" type="text" placeholder="Почти каждый день" required>
+          <select class="select text" required>
+            <option value="">Почти каждый день</option>
+      <option value="">Раз в неделю</option>
+      <option value="">По праздникам</option>
+      <option value="">Редко</option>
+      <option value="">Это был первый и последний раз</option>
+    </select>
+            </div>
         </label>
         <div class="question2">
-          <span class="text question2">Вы подписаны на e-mail рассылку?</span>
-          <div class="radio-button">
-            <input type="radio" id="yes" class="radio" name="radio-group">
-            <label class="radio-t text" for="yes">Да</label>
-            <input type="radio" id="no" class="radio" name="radio-group">
-            <label class="radio-t text" for="no">Нет</label>
+            <span class="text question2">Вы подписаны на e-mail рассылку?</span>
+            <div class="radio-button">
+              <input type="radio" id="yes" class="radio" name="radio-group">
+              <label class="radio-t text" for="yes">Да</label>
+              <input type="radio" id="no" class="radio" name="radio-group">
+              <label class="radio-t text" for="no">Нет</label>
+            </div>
           </div>
-        </div>
         <label class="question3">
           <span class="text">Расскажите, какой контент вы хотели бы видеть
             на нашем сайте?</span>
@@ -44,7 +53,7 @@
   
   <header class="welcome darken">
     <div class="conteiner">
-      <nav>
+      <nav class="navigation">
         <div class="logo-img">
           <a class="logo-link" href="#"><span class="visually-hidden">ccылка лого</span>
             <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 81.6 18.5" style="enable-background:new 0 0 81.6 18.5;" xml:space="preserve">
@@ -70,9 +79,10 @@
           </a>
         </div>
         <div class="menu">
-          <div class="burger-menu">
-            <span></span>
-          </div>
+          <div>
+            <a href="">
+              <span class="burger-menu"></span></a>
+            </div>
           <ul class="items">
             <li><a class="item" href="#">главная</a> </li>
             <li><a class="item" href="#">посты</a></li>
@@ -97,7 +107,7 @@
             <li><a class="post-tag" href="#">lifestyle</a></li>
             <li><a class="post-tag" href="#">interior</a></li>
           </ul>
-          <a class="trend-link" href=" ">Сейчас в тренде сад на подоконнике</a>
+          <h2><a class="trend-link" href=" ">Сейчас в тренде сад на подоконнике</a></h2>
         </div>
       </div>
       <div class="article-post article-post2 darken">
@@ -106,7 +116,7 @@
             <li><a class="post-tag" href="#">food</a></li>
             <!--           <li><a class="post-tag" href="#">lifestyle</a></li> -->
           </ul>
-          <a class="trend-link" href=" ">сыры на красивых картинках из интернета: какие они на вкус?</a>
+          <h2><a class="trend-link" href=" ">сыры на красивых картинках из интернета: какие они на вкус?</a></h2>
         </div>
       </div>
       <div class="article-post article-post3 darken">
@@ -115,7 +125,7 @@
             <li><a class="post-tag" href="#">lifestyle</a></li>
             <li><a class="post-tag" href="#">travel</a></li>
           </ul>
-          <a class="trend-link" href=" ">Собираемся в первый поход в горы</a>
+          <h2><a class="trend-link" href=" ">Собираемся в первый поход в горы</a></h2>
         </div>
       </div>
       <div class="article-post article-post4 darken">
@@ -124,18 +134,18 @@
             <li><a class="post-tag" href="#">food</a></li>
             <li><a class="post-tag" href="#">health</a></li>
           </ul>
-          <a class="trend-link" href=" ">Сейчас в тренде: сколько
-            витамина С в лимонах?</a>
+          <h2><a class="trend-link" href=" ">Сейчас в тренде: сколько
+            витамина С в лимонах?</a></h2>
         </div>
       </div>
     </div>
   </article>
   
   <div class="conteiner-main">
-    <main>
+    <main class="main">
       <section class="post">
         <div class="post-img">
-          <img src="https://netology-code.github.io/html-2-diploma/sources/images/last-post1.jpg" width="380px" alt="Альтернативный текст для картинки">
+          <img src="https://netology-code.github.io/html-2-diploma/sources/images/last-post1.jpg" alt="Альтернативный текст для картинки">
         </div>
         <div class="post-content">
           <ul class="post-tags">
@@ -277,14 +287,14 @@
       </section>
   
     </main>
-    <aside>
+    <aside class="aside">
       <section>
         <div class="aside-header">
           <h2>Новые посты</h2>
         </div>
         <div class="post-aside">
           <div class="aside-img">
-            <img src="images/last-post1.jpg" width="75px" alt="Альтернативный текст для картинки">
+            <img src="https://netology-code.github.io/html-2-diploma/sources/images/last-post1.jpg" width="75px" alt="Альтернативный текст для картинки">
           </div>
           <div class="aside-content">
             <div class="aside-date">
@@ -296,7 +306,7 @@
         </div>
         <div class="post-aside">
           <div class="aside-img">
-            <img src="images/last-post2.jpg" width="75px" alt="Альтернативный текст для картинки">
+            <img src="https://netology-code.github.io/html-2-diploma/sources/images/last-post2.jpg" width="75px" alt="Альтернативный текст для картинки">
           </div>
           <div class="aside-content">
             <div class="aside-date">
@@ -307,7 +317,7 @@
         </div>
         <div class="post-aside">
           <div class="aside-img">
-            <img src="images/45.jpg" width="75px" alt="Альтернативный текст для картинки">
+            <img src="https://netology-code.github.io/html-2-diploma/sources/images/45.jpg" width="75px" alt="Альтернативный текст для картинки">
           </div>
           <div class="aside-content">
             <div class="aside-date">
@@ -319,7 +329,7 @@
         </div>
         <div class="post-aside">
           <div class="aside-img">
-            <img src="images/501.jpg" width="75px" alt="Альтернативный текст для картинки">
+            <img src="https://netology-code.github.io/html-2-diploma/sources/images/501.jpg" width="75px" alt="Альтернативный текст для картинки">
           </div>
           <div class="aside-content">
             <div class="aside-date">
@@ -331,7 +341,7 @@
         </div>
         <div class="post-aside">
           <div class="aside-img">
-            <img src="images\7.jpg" width="75px" alt="Альтернативный текст для картинки">
+            <img src="https://netology-code.github.io/html-2-diploma/sources/images/7.jpg" width="75px" alt="Альтернативный текст для картинки">
           </div>
           <div class="aside-content">
             <div class="aside-date">
@@ -366,7 +376,7 @@
           </button>
         </form>
       </div>
-  
+  <div class="parent-tags">
       <div class="tags-header">
         <h2>Теги</h2>
       </div>
@@ -382,6 +392,8 @@
           <li><a class="a-tag" href="#">Health</a></li>
         </ul>
       </div>
+    </div>
+      <div class="parent-topics">
       <div class="topics-header">
         <h2>Темы</h2>
       </div>
@@ -406,6 +418,7 @@
             <span>8</span>
           </li>
         </ul>
+        </div>
       </div>
     </aside>
   
@@ -417,13 +430,13 @@
   
       <div class="article-product1">
         <picture>
-          <source media="(min-width: 1200px)" srcset="images/shop-item-desk1.jpg">
-          <source media="(min-width: 641px , max-width: 1200px)" srcset="images/shop-item-tablet1.jpg">
-          <source media="(max-width: 640px)" srcset="images/shop-item-mobile1.jpg">
-          <img class="product__img" src="images/shop-item-desk1.jpg" alt="Превью товара">
+          <source media="(min-width: 1200px)" srcset="https://raw.githubusercontent.com/netology-code/mq-diploma/master/sources/img/shop-item-desk1.jpg">
+          <source media="(min-width: 641px , max-width: 1200px)" srcset="https://raw.githubusercontent.com/netology-code/mq-diploma/master/sources/img/shop-item-tablet1.jpg">
+          <source media="(max-width: 640px)" srcset="https://raw.githubusercontent.com/netology-code/mq-diploma/master/sources/img/shop-item-mobile1.jpg">
+          <img class="product__img" src="https://raw.githubusercontent.com/netology-code/mq-diploma/master/sources/img/shop-item-tablet1.jpg" alt="Превью товара">
         </picture>
         <div class="article-product">
-          <h4>Подушки на диван</h4>
+          <h4 class="title-sales h4">Подушки на диван</h4>
           <p>Набор из двух подушек с модными принтами. Видео о создании <a href="">здесь</a></p>
           <footer class="product__footer">
   
@@ -437,13 +450,13 @@
       </div>
       <div class="article-product1">
         <picture>
-          <source media="(min-width: 1200px)" srcset="images/shop-item-desk2.jpg">
-          <source media="(min-width: 641px , max-width: 1200px)" srcset="images/shop-item-tablet2.jpg">
-          <source media="(max-width: 640px)" srcset="images/shop-item-mobile2.jpg">
-          <img class="product__img" src="images/shop-item-desk2.jpg" alt="Превью товара">
+          <source media="(min-width: 1200px)" srcset="https://raw.githubusercontent.com/netology-code/mq-diploma/master/sources/img/shop-item-desk2.jpg">
+          <source media="(min-width: 641px , max-width: 1200px)" srcset="https://raw.githubusercontent.com/netology-code/mq-diploma/master/sources/img/shop-item-desk2.jpg">
+          <source media="(max-width: 640px)" srcset="https://raw.githubusercontent.com/netology-code/mq-diploma/master/sources/img/shop-item-mobile2.jpg">
+          <img class="product__img" src="https://raw.githubusercontent.com/netology-code/mq-diploma/master/sources/img/shop-item-desk2.jpg" alt="Превью товара">
         </picture>
         <div class="article-product">
-          <h4>Кукла "Зайчик"</h4>
+          <h4 class="title-sales h4">Кукла "Зайчик"</h4>
           <p>Интерьерная рукодельная кукла «Зайчик», созданию которой посвящена <a href="">весенняя серия постов</a> в блоге и несколько подкастов</p>
           <footer class="product__footer">
   
@@ -457,13 +470,13 @@
       </div>
       <div class="article-product1">
         <picture>
-          <source media="(min-width: 1200px)" srcset="images/shop-item-desk3.jpg">
-          <source media="(min-width: 641px , max-width: 1200px)" srcset="images/shop-item-tablet3.jpg">
-          <source media="(max-width: 640px)" srcset="images/shop-item-mobile3.jpg">
-          <img class="product__img" src="images/shop-item-desk3.jpg" alt="Превью товара">
+          <source media="(min-width: 1200px)" srcset="https://raw.githubusercontent.com/netology-code/mq-diploma/master/sources/img/shop-item-desk3.jpg">
+          <source media="(min-width: 641px , max-width: 1200px)" srcset="https://raw.githubusercontent.com/netology-code/mq-diploma/master/sources/img/shop-item-tablet3.jpg">
+          <source media="(max-width: 640px)" srcset="https://raw.githubusercontent.com/netology-code/mq-diploma/master/sources/img/shop-item-mobile3.jpg">
+          <img class="product__img" src="https://raw.githubusercontent.com/netology-code/mq-diploma/master/sources/img/shop-item-tablet3.jpg" alt="Превью товара">
         </picture>
         <div class="article-product">
-          <h4>Шестиугольная рамка</h4>
+          <h4 class="title-sales h4">Шестиугольная рамка</h4>
           <p>Необычная рамка для украшения дома из видео <a href="">«Как сделать рамку из подручных средств за 30 минут»в</a></p>
           <footer class="product__footer">
   
@@ -477,7 +490,7 @@
       </div>
     </div>
   </article>
-  <footer>
+  <footer class="footer">
   
     <div class="adress">
       <ul class="socials">
